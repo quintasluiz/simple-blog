@@ -226,22 +226,243 @@ section{
     margin-right: auto;
 }
 
+.container .posts-container .links .icon{
+    padding-right: 1rem;
+}
 
+.container .posts-container .links a{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
 
+container .posts-container .links a i{
+    padding-right: .2rem;
+    color: var(--black);
+}
 
+container .posts-container .links a:hover{
+   color: var(--orange);
+}
 
+container .posts-container .links a:hover i{
+   color: var(--orange);
+}
 
+.container .sidebar .box{
+    border: var(--border);
+    border-radius: .5rem;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 1.5rem;
+}
 
+.container .sidebar .box .title{
+    padding:1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--black);
+    text-transform: capitalize;
+}
 
+.container .sidebar .box .about{
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
 
+.container .sidebar .box .about img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+}
 
+.container .sidebar .box .about h3{
+    color: var(--orange);
+    font-size: 2rem;
 
+}
 
+.container .sidebar .box .about p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
 
+.container .sidebar .box .about .follow{
+    padding: 1rem 0;
+}
 
+.container .sidebar .box .about .follow a{
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: var(--black);
+    color: #fff;
+    font-size: 1.7rem;
+    margin: 0 .1rem;
+} 
 
+.container .sidebar .box .about .follow a:hover{
+    background: var(--orange);
+}
 
+.container .sidebar .box .category{
+    padding: 1rem 1.5rem;
+}
 
+.container .sidebar .box .category a{
+    padding: .4rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .sidebar .box .category a span{
+    background: var(--light-color);
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.container .sidebar .box .category a:hover{
+    color: var(--orange);
+}
+
+.container .sidebar .box .category a:hover span{
+    background-color: var(--orange);
+}
+
+.container .sidebar .box .p-post{
+    padding: 1rem 2rem;
+}
+
+.container .sidebar .box .p-post a{
+    padding: 1rem 0;
+    display: block;
+}
+
+.container .sidebar .box .p-post a h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container .sidebar .box .p-post a span{
+    color: var(--light-color);
+}
+
+.container .sidebar .box .p-post a span i{
+    padding-right: .2rem;
+}
+
+.container .sidebar .box .p-post a:hover h3{
+    color: var(--orange);
+}
+
+.container .sidebar .box .tags{
+    padding: 1rem;
+}
+
+.container .sidebar .box .tags a{
+    display: inline-block;
+    padding: .1rem 1.5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    border-radius: .5rem;
+    border: var(--border);
+    margin: .5rem;
+}
+
+.container .sidebar .box .tags a:hover{
+    background: var(--black);
+    color: #fff;
+}
+
+.contact{
+    background: url(images/contact-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contact form{
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    padding: 2rem;
+}
+
+.contact form h3{
+    color: var(--black);
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    background: #eee;
+    padding: 1rem;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .credit{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .credit span{
+    color: var(--orange);
+}
+
+.footer .follow{
+    padding: 1rem 0;
+}
+
+.footer .follow a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    background: var(--black);
+    color: #fff;
+    margin: 0 .1rem;
+    text-align: center;
+}
+
+.footer .follow a:hover{
+    background: var(--orange);
+}
 
 
 
@@ -260,6 +481,10 @@ section{
     }
     section{
         padding: 2rem ;
+    }
+    .container{
+        grid-template-columns: 2fr 1fr;
+        
     }
 }
 
@@ -298,6 +523,18 @@ section{
         border-radius: .5rem;
         border: var(--border);
     }
+    .container{
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+    .container .posts-container .post .image{
+        height: 30rem;
+    }
+    .footer{
+        flex-flow: column;
+        text-align: center;
+    }
 }
 
 
@@ -306,6 +543,9 @@ section{
     html{
         font-size: 50%;
     }
-
+    .contact form .input-box input{
+        width: 100%;
+    }
+    
    
 }
